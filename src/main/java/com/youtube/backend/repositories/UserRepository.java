@@ -1,4 +1,9 @@
 package com.youtube.backend.repositories;
 
-public class UserRepository {
+import com.youtube.backend.models.User;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+public interface UserRepository extends MongoRepository<User,String> {
+
 }
